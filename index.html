@@ -30,6 +30,8 @@
         <br>
         <p>Nah cara seperti algoritma #4 ini sebenarnya masih bisa direvisi karena pada algoritma ini, angka-angka kandidat yang ditentukan adalah dari 2 sampai N dibagi 2, padahal sebenarnya jika kita mengecek hanya dari angka 2 sampai akar dari N, angka-angka itu saja juga sudah mewakili untuk pengecekan apakah N merupakan bilangan prima atau tidak.</p>
         <br>
+        <p>Contohnya ketika kita ingin mengecek 64, kita hanya perlu mengecek dari angka 2 sampai 8 (akar pangkat 2 dari 64), karena walaupun misal angka 16 juga merupakan faktor dari 64, tetapi angka ini sudah diwakilkan oleh angka 4 atau pengalinya. Jika 64 dibagi 4 hasilnya 16, maka itu sudah cukup menandakan bahwa 64 bukan bilangan prima, jadi tidak perlu dicek sampai angka 16, bahkan 32 seperti pada algoritma #4 (64 dibagi 2).</p>
+        <br>
         <p><strong>Contoh:</strong></p>
         <img src="algo.png" alt="" width="80%">
         <p>Tentu dengan algoritma revisi maka pencarian bisa dilakukan lebih cepat, sehingga dapat mengurangi time complexity dari O(N/2) menjadi O(sqrt(N)).</p>
