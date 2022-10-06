@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kelompok 4A - Penjelasan Exercise</h1>
+    </header>
+
+    <section>
+        <h1>Kelompok 4A</h1>
+        <br>
+        <p>2502043841 - Nyoman Wira Dhimas A. D.</p>
+        <br>
+        <p>2502037454 - Pavel Sulistyo</p>
+        <br>
+        <p>2502041653 - Arnold Hernandes Harazaki R.</p>
+        <br>
+        <p>2502041754 - Ariel Zahran</p>
+    </section>
+
+    <section>
+        <h1>1. Revise Algorithm #4!</h1>
+        <img src="algo 4.png" alt="" width="500px">
+        <p>Seperti yang kita lihat pada algoritma #4 di atas, algoritma ini memakai cara looping dari angka 2 sampai angka N dibagi 2 untuk kandidat angka faktor yang mungkin terdapat pada angka n. Jika memang angka N bisa dibagi oleh angka-angka yang berkandidat sebagai faktor, maka angka N bukan angka prima.</p>
+        <br>
+        <p>Nah cara seperti algoritma #4 ini sebenarnya masih bisa direvisi karena pada algoritma ini, angka-angka kandidat yang ditentukan adalah dari 2 sampai N dibagi 2, padahal sebenarnya jika kita mengecek hanya dari angka 2 sampai akar dari N, angka-angka itu saja juga sudah mewakili untuk pengecekan apakah N merupakan bilangan prima atau tidak.</p>
+        <br>
+        <p><strong>Contoh:</strong></p>
+        <img src="algo.png" alt="" width="80%">
+        <p>Tentu dengan algoritma revisi maka pencarian bisa dilakukan lebih cepat, sehingga dapat mengurangi time complexity dari O(N/2) menjadi O(sqrt(N)).</p>
+        <br>
+        <p><strong>Contoh Implementasi C++:</strong></p>
+        <img src="carbon (2).png" alt="" class="pic">
+        <p>Penggunaan algoritma ini juga bisa dipakai untuk soal nomer 2, yaitu untuk print N bilangan prima pertama.</p>
+    </section>
+
+    <section>
+        <h1>2. Create an algorithm to print first N prime number!</h1>
+        <br>
+        <p><strong>Algoritma Untuk Print N bilangan prima pertama:</strong></p>
+        <br>
+        <p>1. Inisialisasi berapa banyak bilangan prima yang ingin diprint.</p>
+        <br>
+        <p>2. Dimulai dari angka 2, cek dengan menggunakan algoritma pada pertanyaan pertama / algoritma pengecekan di atas apakah angka tersebut merupakan bilangan prima. Jika iya, maka kurangi jumlah angka yang harus diprint.</p>
+        <br>
+        <p>3. Terlepas dari apakah bilangan 2 merupakan prima atau tidak, setelah dicek, lanjutlah ke angka berikutnya (pada kasus angka 2, angka selanjutnya adalah 3).</p>
+        <br>
+        <p>4. Ulangi langkah 2 dan 3 sampai jumlah angka yang harus diprint habis (jumlah = 0).</p>
+        <br>
+        <p><strong>Contoh Implementasi C++:</strong></p>
+        <img src="carbon.png" alt="" class="pic">
+        <img src="test.png" alt="" class="pic">
+    </section>
+</body>
+</html>
